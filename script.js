@@ -27,6 +27,7 @@ listcontainer.addEventListener(
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
       saveData();
+      checkdata();
     }
   },
   false
@@ -41,8 +42,11 @@ function saveData() {
 }
 function showData() {
   listcontainer.innerHTML = localStorage.getItem("data");
+  checkdata();
+}
+showData();
+function checkdata() {
   listcontainer.innerHTML === ""
     ? (document.querySelector(".clear").style.display = "none")
     : (document.querySelector(".clear").style.display = "block");
 }
-showData();

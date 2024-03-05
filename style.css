@@ -85,10 +85,10 @@ ul li::before {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(image/unchecked.png);
+  background-image: url(https://cdn1.iconfinder.com/data/icons/rudy-ui/24/012_053_radio_button_radiobutton_inactive-512.png);
   background-size: cover;
   background-position: center;
-  top: 10px;
+  top: 7px;
   left: 8px;
 }
 .checked {
@@ -96,7 +96,7 @@ ul li::before {
   text-decoration: line-through;
 }
 ul li.checked::before {
-  background-image: url(image/checked.png);
+  background-image: url(https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonon_110976.png);
 }
 ul li span {
   position: absolute;
